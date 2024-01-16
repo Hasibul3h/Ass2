@@ -256,6 +256,19 @@ select {
   background-position: center;
   background-size: cover;
   border-radius: 16px;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+.hero-area-bg::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%);
+  width: 100%;
+  height: 100%;
+  z-index: -1;
 }
 .hero-area-text {
   padding: 100px 0px;
@@ -563,6 +576,41 @@ text-wrap: nowrap;
 
 
 
+.choose-second-row,
+.choose-first-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+  justify-content: center;
+}
+.choose-item {
+  padding: 30px;
+  border-radius: 16px;
+  border: 1px solid rgba(251, 181, 99, 0.20);
+  background: rgba(251, 181, 99, 0.05);
+}
+.choose-item.two {
+  border: 1px solid rgba(41, 206, 246, 0.20);
+  background: rgba(41, 206, 246, 0.05);
+}
+.choose-item.three {
+  border: 1px solid rgba(233, 68, 68, 0.20);
+  background: rgba(233, 68, 68, 0.05);
+}
+.choose-item h3 {
+  color: #131318;
+font-size: 24px;
+font-style: normal;
+font-weight: 800;
+margin: 15px 0px 10px 0px;
+}
+.choose-item p {
+  color: #5A5A5D;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+}
+
 
 
 
@@ -620,5 +668,77 @@ br {
 }
 .destination-item img {
   width: 100%;
+}
+.choose-second-row,
+.choose-first-row {
+  flex-direction: column;
+}
+.choose-item {
+  width: 100%;
+}
+.footer-area {
+	padding-top: 30px;
+}
+.copyright {
+	padding: 20px 0;
+}
+.footer-wrap .logo {
+	margin-bottom: 10px;
+}
+.footer-area p {
+	margin-bottom: 10px;
+}
+.social {
+	margin-bottom: 20px;
+}
+.newsletter-area.pt-100.pb-100 {
+  padding: 20px 0px;
+}
+.newsletter {
+	padding: 20px;
+}
+.newsletter-row {
+	gap: 20px;
+}
+.choose-second-row {
+	margin: 0;
+}
+.choose-item h3 {
+	font-size: 20px;
+}
+p,
+.tours-content ul li {
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 24px !important;
+}
+.destination-title h2,
+.tours-content h2 {
+	font-size: 20px;
+	font-weight: 800;
+  margin-bottom: 10px;
+}
+.destination-title.mb-45 {
+	margin-bottom: 20px;
+}
+.choose-area.pt-80 {
+  padding-top: 0px;
+}
+.destination-item span {
+	font-size: 20px;
+	font-weight: 700;
+}
+.destination-area.pt-100,
+.tours-area.pt-100 {
+  padding-top: 20px;
+}
+.hero-area-text h1 {
+	font-size: 22px;
+}
+.hero-area-text {
+	padding: 20px;
+}
+.hero-area-text p {
+	margin-bottom: 30px;
 }
 }
