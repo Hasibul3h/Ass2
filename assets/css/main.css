@@ -741,4 +741,8 @@ p,
 .hero-area-text p {
 	margin-bottom: 30px;
 }
+.choose-second-row, .choose-first-row {
+	gap: 20px;
+	margin-bottom: 20px;
+}
 }
