@@ -13,7 +13,7 @@
     <!-- Place favicon.ico in the root directory -->
 
     <!-- CSS here -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Merriweather:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
     <link rel="stylesheet" href="assets/css/default.css">
     <link rel="stylesheet" href="assets/css/main.css">
@@ -22,20 +22,20 @@
 <body>
 
     <header>
-        <div class="header-area">
+        <div class="header-area pt-50 pb-50">
             <div class="container">
                 <div class="header-wrap">
                     <div class="logo">
-                        <img src="" alt="">
+                        <img src="assets/img/logo.png" alt="">
                         <h3>Happy <span>Travel</span></h3>
                     </div>
                     <nav>
                         <ul>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">Home</a></li>
+                            <li><a href="#" class="active">Home</a></li>
+                            <li><a href="#">Packages</a></li>
+                            <li><a href="#">Testimonial</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -49,31 +49,31 @@
             <div class="container">
                 <div class="hero-area-bg">
                     <div class="hero-area-text">
-                        <h1>Happy New Year</h1>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                            Magnam numquam libero adipisci accusamus? Unde eum quo aut quae, ipsa sint.</p>
+                        <h1>Explore Your Travel</h1>
+                        <p>Embark on a thrilling journey with 'Explore Your Travel.' Discover new horizons, <br>embrace adventure, and 
+                            let wanderlust guide you.</p>
                         <form action="#">
-                            <div class="field">
-                                <input type="text" placeholder="Dummy">
-                            </div>
-                            <div class="field">
-                                <select>
-                                    <option value="1">Dummy</option>
-                                    <option value="2">Dummy</option>
-                                    <option value="3">Dummy</option>
-                                    <option value="4">Dummy</option>
-                                </select>
-                            </div>
-                            <div class="field">
-                                <select>
-                                    <option value="1">Dummy</option>
-                                    <option value="2">Dummy</option>
-                                    <option value="3">Dummy</option>
-                                    <option value="4">Dummy</option>
-                                </select>
-                            </div>
-                            <div class="field">
-                                <button type="submit">Search</button>
+                            <div class="selector-item">
+                                <div class="item">
+                                    <input type="text" placeholder="Where go">
+                                </div>
+                                <div class="item">
+                                    <select id="A">
+                                        <option value="1">When</option>
+                                        <option value="2">Sunday</option>
+                                        <option value="3">Monday</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <select id="B">
+                                        <option value="1">Select Type</option>
+                                        <option value="2">Bus</option>
+                                        <option value="3">Train</option>
+                                    </select>
+                                </div>
+                                <div class="item">
+                                    <button type="submit"><i class="fas fa-search"></i>Search</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -83,23 +83,25 @@
         <!-- Hero area end here -->
         
         <!-- Tours area start here -->
-        <section class="tours-area">
+        <section class="tours-area pt-100">
             <div class="container">
                 <div class="tours-wrap">
                     <div class="tours-content">
-                        <h2>Lorem, ipsum dolor.</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, eum?</p>
+                        <h2>Our Popular Tours.</h2>
+                        <p>Embark on unforgettable adventures with 'Our Popular Tours.' Immerse yourself in curated journeys that 
+                            capture the essence of diverse cultures and breathtaking landscapes.</p>
                         <ul>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
-                            <li>Lorem ipsum dolor sit amet.</li>
+                            <li>Explore a wide array of destinations, from bustling <br>metropolises to tranquil natural wonders</li>
+                            <li>Our tours are meticulously planned, offering a perfect <br> balance of must-see attractions, hidden gems.</li>
+                            <li>Join a vibrant community of fellow travelers, fostering <br>connections and shared memories through guided tours.</li>
                         </ul>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                            Architecto facilis alias explicabo aliquid recusandae neque!</p>
+                        <p class="secondary">From vibrant city tours to serene nature escapes, our handpicked itineraries 
+                            promise a perfect blend of excitement and relaxation, ensuring an enriching travel experience 
+                            for every explorer.</p>
                         <a href="#">Read more</a>
                     </div>
                     <div class="tours-img">
-                        <img src="" alt="">
+                        <img src="assets/img/mountain.png" alt="">
                     </div>
                 </div>
             </div>
@@ -186,18 +188,18 @@
         <!-- Choose area end here -->
 
         <!-- Newsletter area start here -->
-        <div class="newsletter-area">
+        <div class="newsletter-area pt-100 pb-100">
             <div class="container">
                 <div class="newsletter-row">
                     <div class="newsletter">
                         <form action="#">
-                            <h3>Lorem, ipsum dolor.</h3>
-                            <p>Lorem ipsum dolor sit amet.</p>
+                            <h3>Newsletter</h3>
+                            <p>Get your daily dose of travel news & tips. <br>Sign up today!</p>
                             <div class="field">
-                                <input type="text" placeholder="LOl">
+                                <input type="text" placeholder="Enter your name">
                             </div>
                             <div class="field">
-                                <input type="text" placeholder="LOl">
+                                <input type="text" placeholder="Enter your email">
                             </div>
                             <div class="field">
                                 <button type="submit">Subscribe</button>
@@ -205,10 +207,10 @@
                         </form>
                     </div>
                     <div class="newsletter-img">
-                        <img src="" alt="">
+                        <img src="assets/img/travel.png" alt="">
                         <div class="discount">
-                            <span>Lorem</span>
-                            <h4>Lorem</h4>
+                            <span>Travel.com</span>
+                            <h4>Save up to 70%</h4>
                         </div>
                     </div>
                 </div>
@@ -222,18 +224,19 @@
         <div class="footer-area">
             <div class="container">
                 <div class="footer-wrap">
-                    <div class="footer-logo">
-                        Logo
+                    <div class="logo">
+                        <img src="assets/img/logo.png" alt="">
+                        <h3>Happy <span>Travel</span></h3>
                     </div>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus, doloremque.</p>
+                    <p>Indulge in the extraordinary with 'Our Popular Tours,' <br>where travel dreams come to life. </p>
                     <div class="social">
-                        <a href="#">A</a>
-                        <a href="#">A</a>
-                        <a href="#">A</a>
-                        <a href="#">A</a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
                     </div>
                     <div class="copyright">
-                        <span>Lorem, ipsum dolor.</span>
+                        <span>2023, All Rights Reserved.</span>
                     </div>
                 </div>
             </div>

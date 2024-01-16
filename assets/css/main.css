@@ -25,9 +25,13 @@
 /*----------------------------------------*/
 /*  01. Theme default
 /*----------------------------------------*/
-
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
 body {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 400;
   font-style: normal;
   color: #ccc;
@@ -38,6 +42,8 @@ body {
 h1,h2,h3,h4,h5,h6 {
   margin: 0;
   padding: 0;
+  font-family: 'Mulish', sans-serif;
+  color: #131318;
 }
 .img, img {
   max-width: 100%;
@@ -65,6 +71,7 @@ i {
   -o-transition: all 0.3s ease-out 0s;
   transition: all 0.3s ease-out 0s;
   text-decoration: none;
+  font-family: 'Mulish', sans-serif;
 }
 
 a:focus,
@@ -101,9 +108,10 @@ button:focus, input:focus, input:focus, textarea, textarea:focus {
 input,
 select,
 textarea {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 400;
   opacity: 1;
+  box-sizing: border-box;
 }
 
 ul {
@@ -112,11 +120,7 @@ ul {
 }
 
 p {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 27px;
-  color: #ccc;
-  margin-bottom: 10px;
+  font-family: 'Mulish', sans-serif;
 }
 
 i {
@@ -135,14 +139,14 @@ label {
   display: inline-block;
 }
 
-select {
+/* select {
   -webkit-appearance: none;
   -moz-appearance: none;
-}
+} */
 
 input,
 select {
-  font-family: 'Inter', sans-serif;
+  font-family: 'Mulish', sans-serif;
   font-weight: 400;
 }
 
@@ -167,19 +171,21 @@ select {
 /*--
     - Input Placeholder
 -----------------------------------------*/
-* input::-moz-placeholder {
+* input::-moz-placeholder,
+* select::-moz-placeholder {
   opacity: 1;
-  font-family: 'Inter', sans-serif;
-  color: rgba(7, 2, 17, 0.30);
-  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 16px;
   line-height: 1;
 }
 
-* input::placeholder {
+* input::placeholder,
+* select::placeholder {
   opacity: 1;
-  font-family: 'Inter', sans-serif;
-  color: rgba(7, 2, 17, 0.30);
-  font-size: 18px;
+  font-family: 'Mulish', sans-serif;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 16px;
   line-height: 1;
 }
 
@@ -206,18 +212,361 @@ select {
 .logo {
   display: flex;
   gap: 5px;
+  align-items: center;
 }
 .logo h3 {
-  font-size: 32px;
+  font-size: 36px;
   color: #000;
+  font-weight: 800;
 }
 .logo h3 span {
-  font-size: 32px;
-  color: #e23;
+  font-size: 36px;
+  color: #FF5400;
+  font-weight: 800;
+}
+.header-wrap nav {
+  text-align: right;
+}
+.header-wrap nav ul {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+.header-wrap nav ul li {
+  margin-right: 40px;
+  display: inline-block;
+}
+.header-wrap nav ul li a {
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+  color: #424247;
+}
+.header-wrap nav ul li a.active,
+.header-wrap nav ul li a:hover {
+  color: #FF5400;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 15px;
+}
+
+.hero-area-bg {
+  background-image: url('../img/hero-bg.png');
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+}
+.hero-area-text {
+  padding: 100px 0px;
+  text-align: center;
+}
+.hero-area-text h1 {
+  color: #FFF;
+  font-family: Mulish;
+  font-size: 64px;
+  font-weight: 800;
+  margin-bottom: 5px;
+}
+.hero-area-text p {
+  color: #FFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 45px;
+}
+.hero-area-text .selector-item {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.30);
+  width: 800px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-content: space-between;
+  padding: 15px;
+  place-items: center;
+}
+.selector-item .item {
+  width: 100%;
+}
+.hero-area-text input,
+.hero-area-text select {
+  border-radius: 8px;
+  background: #FFF;
+  height: 52px;
+  font-size: 16px;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  width: 100%;
+}
+.hero-area-text button {
+  border-radius: 8px;
+  background: #FF5400;
+  height: 52px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  cursor: pointer;
+  width: 100%;
+}
+.hero-area-text button:hover {
+  background-color: #ec8551;
+}
+.hero-area-text button i {
+  margin-right: 4px;
+  display: inline-block;
 }
 
 
-.container {
-  max-width: 1320px;
+
+.tours-content {
+  max-width: 550px;
+}
+.tours-content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  margin-bottom: 10px;
+}
+.tours-content p {
+  color: rgba(19, 19, 24, 0.70);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+.tours-content p.secondary{
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 35px;
+}
+.tours-content a {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 800;
+  height: 52px;
+  text-align: center;
+  padding: 0px 30px;
+  display: inline-block;
+  background-color: #FF5400;
+  text-transform: capitalize;
+  line-height: 52px;
+  border-radius: 8px;
+}
+.tours-content a:hover {
+  background-color: #f56b26;
+}
+.tours-content ul {
+  list-style: disc;
+  margin-bottom: 10px;
+  padding: 10px 0px 10px 12px;
+}
+.tours-content ul li {
+  color: rgba(19, 19, 24, 0.70);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.tours-content ul li:last-child {
+  margin-bottom: 0px;
+}
+.tours-wrap {
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+
+
+.footer-area {
+  background: rgba(19, 19, 24, 0.05);
+  padding-top: 110px;
+}
+.footer-area p {
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  margin-bottom: 40px;
+}
+.social {
+  display: inline-flex;
+  gap: 20px;
+  margin-bottom: 50px;
+}
+.social a {
+  font-size: 24px;
+  color: #131318;
+}
+.social a:hover {
+  color: #FF5400;
+}
+.footer-wrap {
+  text-align: center;
+  max-width: 870px;
   margin: 0 auto;
+}
+.footer-wrap .logo {
+  display: inline-flex;
+}
+.copyright {
+  text-align: center;
+  border-top: 1px solid rgba(19, 19, 24, 0.10);
+  padding: 45px 0px 50px 0px;
+}
+.copyright span {
+  color: #131318;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+
+.newsletter-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+}
+.newsletter p {
+  border-bottom: 1px solid rgba(19, 19, 24, 0.10);
+  color: #5A5A5D;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-bottom: 25px;
+  margin-bottom: 20px;
+}
+.newsletter h3 {
+  color: #131318;
+  font-size: 24px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+.newsletter input {
+  border-radius: 8px;
+  background: rgba(19, 19, 24, 0.05);
+  height: 52px;
+  font-size: 16px;
+  color: rgba(19, 19, 24, 0.50);
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  outline: none;
+  padding: 0px 20px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.newsletter button {
+  color: #FFF;
+  font-size: 20px;
+  font-weight: 800;
+  height: 52px;
+  text-align: center;
+  padding: 0px 30px;
+  display: block;
+  background-color: #FF5400;
+  text-transform: capitalize;
+  line-height: 52px;
+  border-radius: 8px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.newsletter {
+  border-radius: 16px;
+  border: 1px solid #FF5400;
+  padding: 32px 40px 40px 40px;
+}
+.newsletter-img {
+  max-width: 670px;
+  position: relative;
+  text-align: center;
+  border-radius: 16px;
+}
+.newsletter-img img {
+  width: 100%;
+}
+.newsletter {
+  width: 470px;
+}
+.discount {
+  position: absolute;
+  bottom: 58px;
+  right: 0px;
+  background: #FF5400;
+  padding: 15px 30px;
+  border-radius: 16px;
+  transform: rotate(-25deg);
+}
+.discount span {
+  color: #FFF;
+  font-size: 24px;
+  font-weight: 400;
+  display: inline-block;
+}
+.discount h4 {
+  color: #FFF;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 767px) {
+  .hero-area-text .selector-item {
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+}
+.tours-wrap {
+  flex-wrap: wrap;
+}
+.newsletter-row {
+	flex-wrap: wrap;
+}
+.newsletter {
+  width: 100%;
+}
+.discount {
+  transform: inherit;
+  bottom: 20px;
+  right: 20px;
+}
+.header-wrap {
+	flex-wrap: wrap;
+}
+.header-wrap nav ul {
+  flex-wrap: wrap;
+}
+.header-wrap nav ul li {
+	margin-right: 15px;
+}
+.logo h3,
+.logo h3 span {
+	font-size: 20px;
+}
+.discount h4 {
+	font-size: 18px;
+}
+.discount span {
+  font-size: 16px;
+}
+br {
+  display: none;
+}
 }
