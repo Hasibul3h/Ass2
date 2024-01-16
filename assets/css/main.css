@@ -152,10 +152,10 @@ label {
   display: inline-block;
 }
 
-/* select {
+select {
   -webkit-appearance: none;
   -moz-appearance: none;
-} */
+}
 
 input,
 select {
@@ -214,7 +214,7 @@ select {
 }
 
 /*----------------------------------------*/
-/*  02. hero
+/*  02. header
 /*----------------------------------------*/
 .header-wrap {
   display: flex;
@@ -267,6 +267,10 @@ select {
   color: #FF5400;
 }
 
+
+/*----------------------------------------*/
+/*  03. hero
+/*----------------------------------------*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -373,7 +377,9 @@ select {
 }
 
 
-
+/*----------------------------------------*/
+/*  02. tours
+/*----------------------------------------*/
 .tours-content {
   max-width: 550px;
 }
@@ -443,6 +449,9 @@ select {
 
 
 
+/*----------------------------------------*/
+/*  05. footer
+/*----------------------------------------*/
 .footer-area {
   background: rgba(19, 19, 24, 0.05);
   padding-top: 110px;
@@ -494,6 +503,9 @@ select {
 }
 
 
+/*----------------------------------------*/
+/*  06. newsletter
+/*----------------------------------------*/
 .newsletter-row {
   display: flex;
   justify-content: space-between;
@@ -596,7 +608,9 @@ select {
 }
 
 
-
+/*----------------------------------------*/
+/*  07. destination
+/*----------------------------------------*/
 .destination-title {
   text-align: center;
 }
@@ -640,7 +654,9 @@ select {
 }
 
 
-
+/*----------------------------------------*/
+/*  08. Choose
+/*----------------------------------------*/
 .choose-second-row,
 .choose-first-row {
   display: flex;
@@ -681,10 +697,9 @@ select {
   line-height: 26px;
 }
 
-
-
-
-
+/*----------------------------------------*/
+/*  09. Responsive styles
+/*----------------------------------------*/
 
 @media only screen and (max-width: 767px) {
   .hero-area-text .selector-item {
