@@ -37,7 +37,11 @@
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
+                        <button class="close-btn"><i class="fas fa-times"></i></button>
                     </nav>
+                    <div class="sidebar-icon">
+                        <button type="button" onclick="toggleNav()"><i class="fas fa-bars"></i></button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -244,6 +248,20 @@
     </footer>
     <!-- Footer area end here -->
 
+    <script>
+        function toggleNav() {
+            var nav = document.querySelector('nav');
+            nav.classList.toggle('active');
+        }
+    
+        document.querySelector('.close-btn').addEventListener('click', function() {
+            var nav = document.querySelector('nav');
+            nav.classList.remove('active');
+        });
+    </script>
+
 </body>
+
+
 
 </html>

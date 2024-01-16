@@ -254,7 +254,9 @@ select {
   margin-right: 40px;
   display: inline-block;
 }
-
+.header-wrap nav ul li:last-child {
+  margin-right: 0px;
+}
 .header-wrap nav ul li a {
   font-family: Mulish;
   font-size: 18px;
@@ -696,6 +698,10 @@ select {
   font-weight: 400;
   line-height: 26px;
 }
+.sidebar-icon,
+.close-btn {
+  display: none;
+}
 
 /*----------------------------------------*/
 /*  09. Responsive styles
@@ -727,14 +733,6 @@ select {
 
   .header-wrap {
     flex-wrap: wrap;
-  }
-
-  .header-wrap nav ul {
-    flex-wrap: wrap;
-  }
-
-  .header-wrap nav ul li {
-    margin-right: 15px;
   }
 
   .logo h3,
@@ -817,8 +815,7 @@ select {
     font-size: 20px;
   }
 
-  p,
-  .tours-content ul li {
+  p {
     font-size: 14px !important;
     font-weight: 400 !important;
     line-height: 24px !important;
@@ -865,5 +862,64 @@ select {
   .choose-first-row {
     gap: 20px;
     margin-bottom: 20px;
+  }
+  .sidebar-icon {
+    display: inline-block;
+  }
+  .sidebar-icon button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #FF5400;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+  .header-wrap nav ul {
+    text-align: left;
+    flex-direction: column;
+    gap: 15px;
+    color: #131318;
+    justify-content: flex-start;
+  }
+
+  .header-wrap nav {
+    position: fixed;
+    top: 0px;
+    right: -280px;
+    min-height: 100vh;
+    overflow-y: auto;
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    background: #ccc;
+    z-index: 9;
+    transition: all linear 0.3s;
+  }
+  .header-wrap nav.active {
+    right: 0px;
+  }
+  .header-wrap nav ul li {
+    margin: 0px;
+  }
+  .close-btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #131318;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
 }
