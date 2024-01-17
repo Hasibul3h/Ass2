@@ -378,7 +378,18 @@ select {
   display: inline-block;
 }
 
-
+.item.select-icon {
+  position: relative;
+}
+.item.select-icon::after {
+  position: absolute;
+  content: '\f078';
+  top: 18px;
+  right: 15px;
+  font-size: 16px;
+  color: rgba(19, 19, 24, 0.70);
+  font-family: "Font Awesome 5 Pro";
+}
 /*----------------------------------------*/
 /*  02. tours
 /*----------------------------------------*/
